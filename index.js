@@ -1,7 +1,7 @@
 const cheerio = require('cheerio'); //Parsing HTML
 const axios = require('axios');
 const j2c = require('json2csv').Parser; //Parse data to CSV format
-const fs = require('fs');
+const { readFileSync, writeFileSync } = require('fs');
 
 const topAnime = "https://myanimelist.net/topanime.php";
 const topManga = "https://myanimelist.net/topmanga.php";
@@ -15,7 +15,7 @@ const getMedia = async (url) => {
         // let scrapedItems = 0;
 
         $(".ranking-list").each((i, media) => {
-            rank = $(media).find(".rank .rank1").text();
+            rank = $(media).find(".rank .top-anime-rank-text").text();
             title = $(media).find("h3 a").text();
             score = $(media).find(".score .text").text();
 
@@ -38,16 +38,16 @@ const getMedia = async (url) => {
 
         const parser = new j2c();
         const csv = parser.parse(data);
-        fs.writeFileSync("./Top 100.csv", csv, (err) => {
+        writeFileSync("./Top 100.csv", csv, (err) => {
             if(err) throw err;
         });
-        fs.writeFileSync('Top100.json', JSON.stringify(data), (err) => {
-            if(err) throw err;
-        });
+        // writeFileSync('Top100.json', JSON.stringify(data), (err) => {
+        //     if(err) throw err;
+        // }); 
     }catch(err){
         console.log(err);
     }
 };
 
 getMedia(topAnime);
-getMedia(topManga);
+// getMedia(topManga);
