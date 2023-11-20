@@ -38,7 +38,7 @@ const getMedia = async (url) => {
 
         const parser = new j2c();
         const csv = parser.parse(data);
-        writeFileSync("./Top 100.csv", csv, (err) => {
+        writeFileSync("./Top 100 anime.csv", csv, (err) => {
             if(err) throw err;
         });
         // writeFileSync('Top100.json', JSON.stringify(data), (err) => {
