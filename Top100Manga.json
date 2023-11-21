@@ -1,0 +1,502 @@
+[
+  {
+    "rank": "1",
+    "title": "Berserk",
+    "score": "9.47"
+  },
+  {
+    "rank": "2",
+    "title": "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",
+    "score": "9.30"
+  },
+  {
+    "rank": "3",
+    "title": "Vagabond",
+    "score": "9.24"
+  },
+  {
+    "rank": "4",
+    "title": "One Piece",
+    "score": "9.22"
+  },
+  {
+    "rank": "5",
+    "title": "Monster",
+    "score": "9.15"
+  },
+  {
+    "rank": "6",
+    "title": "Slam Dunk",
+    "score": "9.08"
+  },
+  {
+    "rank": "7",
+    "title": "Vinland Saga",
+    "score": "9.06"
+  },
+  {
+    "rank": "8",
+    "title": "Fullmetal Alchemist",
+    "score": "9.03"
+  },
+  {
+    "rank": "9",
+    "title": "Grand Blue",
+    "score": "9.03"
+  },
+  {
+    "rank": "10",
+    "title": "Oyasumi Punpun",
+    "score": "9.01"
+  },
+  {
+    "rank": "11",
+    "title": "Kingdom",
+    "score": "9.00"
+  },
+  {
+    "rank": "12",
+    "title": "Houseki no Kuni",
+    "score": "8.96"
+  },
+  {
+    "rank": "13",
+    "title": "20th Century Boys",
+    "score": "8.95"
+  },
+  {
+    "rank": "14",
+    "title": "Ashita no Joe",
+    "score": "8.94"
+  },
+  {
+    "rank": "15",
+    "title": "Real",
+    "score": "8.93"
+  },
+  {
+    "rank": "16",
+    "title": "Monogatari Series: First Season",
+    "score": "8.93"
+  },
+  {
+    "rank": "17",
+    "title": "Monogatari Series: Second Season",
+    "score": "8.91"
+  },
+  {
+    "rank": "18",
+    "title": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+    "score": "8.91"
+  },
+  {
+    "rank": "19",
+    "title": "Mikkakan no Koufuku",
+    "score": "8.91"
+  },
+  {
+    "rank": "20",
+    "title": "Yotsuba to!",
+    "score": "8.89"
+  },
+  {
+    "rank": "21",
+    "title": "GTO",
+    "score": "8.88"
+  },
+  {
+    "rank": "22",
+    "title": "3-gatsu no Lion",
+    "score": "8.88"
+  },
+  {
+    "rank": "23",
+    "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+    "score": "8.87"
+  },
+  {
+    "rank": "24",
+    "title": "Koe no Katachi",
+    "score": "8.86"
+  },
+  {
+    "rank": "25",
+    "title": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e: 2-nensei-hen",
+    "score": "8.85"
+  },
+  {
+    "rank": "26",
+    "title": "Umineko no Naku Koro ni Chiru - Episode 8: Twilight of the Golden Witch",
+    "score": "8.85"
+  },
+  {
+    "rank": "27",
+    "title": "Haikyuu!!",
+    "score": "8.85"
+  },
+  {
+    "rank": "28",
+    "title": "Monogatari Series: Final Season",
+    "score": "8.85"
+  },
+  {
+    "rank": "29",
+    "title": "Ookami to Koushinryou",
+    "score": "8.83"
+  },
+  {
+    "rank": "30",
+    "title": "Kaze no Tani no Nausicaä",
+    "score": "8.82"
+  },
+  {
+    "rank": "31",
+    "title": "Akatsuki no Yona",
+    "score": "8.82"
+  },
+  {
+    "rank": "32",
+    "title": "86",
+    "score": "8.81"
+  },
+  {
+    "rank": "33",
+    "title": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+    "score": "8.80"
+  },
+  {
+    "rank": "34",
+    "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "score": "8.79"
+  },
+  {
+    "rank": "35",
+    "title": "Nana",
+    "score": "8.79"
+  },
+  {
+    "rank": "36",
+    "title": "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.",
+    "score": "8.78"
+  },
+  {
+    "rank": "37",
+    "title": "Made in Abyss",
+    "score": "8.77"
+  },
+  {
+    "rank": "38",
+    "title": "Uchuu Kyoudai",
+    "score": "8.77"
+  },
+  {
+    "rank": "39",
+    "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
+    "score": "8.77"
+  },
+  {
+    "rank": "40",
+    "title": "One Punch-Man",
+    "score": "8.75"
+  },
+  {
+    "rank": "41",
+    "title": "Chainsaw Man",
+    "score": "8.74"
+  },
+  {
+    "rank": "42",
+    "title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen",
+    "score": "8.74"
+  },
+  {
+    "rank": "43",
+    "title": "Kokou no Hito",
+    "score": "8.74"
+  },
+  {
+    "rank": "44",
+    "title": "Hunter x Hunter",
+    "score": "8.73"
+  },
+  {
+    "rank": "45",
+    "title": "Hajime no Ippo",
+    "score": "8.72"
+  },
+  {
+    "rank": "46",
+    "title": "Mushishi",
+    "score": "8.72"
+  },
+  {
+    "rank": "47",
+    "title": "Tian Guan Cifu",
+    "score": "8.70"
+  },
+  {
+    "rank": "48",
+    "title": "Utsuro no Hako to Zero no Maria",
+    "score": "8.70"
+  },
+  {
+    "rank": "49",
+    "title": "Shoujo Shuumatsu Ryokou",
+    "score": "8.70"
+  },
+  {
+    "rank": "50",
+    "title": "Death Note",
+    "score": "8.69"
+  },
+  {
+    "rank": "51",
+    "title": "Beck",
+    "score": "8.69"
+  },
+  {
+    "rank": "52",
+    "title": "Kono Oto Tomare!",
+    "score": "8.69"
+  },
+  {
+    "rank": "53",
+    "title": "Sayonara Eri",
+    "score": "8.69"
+  },
+  {
+    "rank": "54",
+    "title": "Yokohama Kaidashi Kikou",
+    "score": "8.68"
+  },
+  {
+    "rank": "55",
+    "title": "Akira",
+    "score": "8.68"
+  },
+  {
+    "rank": "56",
+    "title": "Dorohedoro",
+    "score": "8.68"
+  },
+  {
+    "rank": "57",
+    "title": "Kino no Tabi: The Beautiful World",
+    "score": "8.67"
+  },
+  {
+    "rank": "58",
+    "title": "Yagate Kimi ni Naru",
+    "score": "8.67"
+  },
+  {
+    "rank": "59",
+    "title": "Solo Leveling",
+    "score": "8.67"
+  },
+  {
+    "rank": "60",
+    "title": "The Horizon",
+    "score": "8.67"
+  },
+  {
+    "rank": "61",
+    "title": "Sousou no Frieren",
+    "score": "8.67"
+  },
+  {
+    "rank": "62",
+    "title": "Kozure Ookami",
+    "score": "8.66"
+  },
+  {
+    "rank": "63",
+    "title": "Natsume Yuujinchou",
+    "score": "8.66"
+  },
+  {
+    "rank": "64",
+    "title": "Zaregoto Series",
+    "score": "8.66"
+  },
+  {
+    "rank": "65",
+    "title": "Shinyaku Toaru Majutsu no Index",
+    "score": "8.66"
+  },
+  {
+    "rank": "66",
+    "title": "Kimi no Suizou wo Tabetai",
+    "score": "8.65"
+  },
+  {
+    "rank": "67",
+    "title": "Bungou Stray Dogs: Beast",
+    "score": "8.65"
+  },
+  {
+    "rank": "68",
+    "title": "ReLIFE",
+    "score": "8.65"
+  },
+  {
+    "rank": "69",
+    "title": "Overlord",
+    "score": "8.65"
+  },
+  {
+    "rank": "70",
+    "title": "Golden Kamuy",
+    "score": "8.64"
+  },
+  {
+    "rank": "71",
+    "title": "Koten-bu Series",
+    "score": "8.64"
+  },
+  {
+    "rank": "72",
+    "title": "Violet Evergarden",
+    "score": "8.64"
+  },
+  {
+    "rank": "73",
+    "title": "Blue Period",
+    "score": "8.64"
+  },
+  {
+    "rank": "74",
+    "title": "Seishun Buta Yarou Series",
+    "score": "8.63"
+  },
+  {
+    "rank": "75",
+    "title": "\"Oshi no Ko\"",
+    "score": "8.63"
+  },
+  {
+    "rank": "76",
+    "title": "Gintama",
+    "score": "8.63"
+  },
+  {
+    "rank": "77",
+    "title": "Aria",
+    "score": "8.63"
+  },
+  {
+    "rank": "78",
+    "title": "Pluto",
+    "score": "8.62"
+  },
+  {
+    "rank": "79",
+    "title": "Fata Morgana no Yakata: Anata no Genten ni Itaru Monogatari",
+    "score": "8.62"
+  },
+  {
+    "rank": "80",
+    "title": "Tian Guan Cifu",
+    "score": "8.62"
+  },
+  {
+    "rank": "81",
+    "title": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "score": "8.62"
+  },
+  {
+    "rank": "82",
+    "title": "Mob Psycho 100",
+    "score": "8.61"
+  },
+  {
+    "rank": "83",
+    "title": "Banana Fish",
+    "score": "8.61"
+  },
+  {
+    "rank": "84",
+    "title": "Hi no Tori (1967)",
+    "score": "8.61"
+  },
+  {
+    "rank": "85",
+    "title": "Umarekawattemo Mata, Watashi to Kekkon shitekuremasu ka",
+    "score": "8.61"
+  },
+  {
+    "rank": "86",
+    "title": "Veil",
+    "score": "8.61"
+  },
+  {
+    "rank": "87",
+    "title": "Tongari Boushi no Atelier",
+    "score": "8.60"
+  },
+  {
+    "rank": "88",
+    "title": "Ao Ashi",
+    "score": "8.60"
+  },
+  {
+    "rank": "89",
+    "title": "Monogatari Series: Monster Season",
+    "score": "8.60"
+  },
+  {
+    "rank": "90",
+    "title": "Suzumiya Haruhi Series",
+    "score": "8.60"
+  },
+  {
+    "rank": "91",
+    "title": "Ginga Eiyuu Densetsu",
+    "score": "8.60"
+  },
+  {
+    "rank": "92",
+    "title": "Kaoru Hana wa Rin to Saku",
+    "score": "8.60"
+  },
+  {
+    "rank": "93",
+    "title": "Omniscient Reader",
+    "score": "8.59"
+  },
+  {
+    "rank": "94",
+    "title": "Umineko no Naku Koro ni Chiru - Episode 7: Requiem of the Golden Witch",
+    "score": "8.59"
+  },
+  {
+    "rank": "95",
+    "title": "Shigatsu wa Kimi no Uso",
+    "score": "8.59"
+  },
+  {
+    "rank": "96",
+    "title": "Neon Genesis Evangelion",
+    "score": "8.58"
+  },
+  {
+    "rank": "97",
+    "title": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai",
+    "score": "8.57"
+  },
+  {
+    "rank": "98",
+    "title": "Pandora Hearts",
+    "score": "8.57"
+  },
+  {
+    "rank": "99",
+    "title": "Skip to Loafer",
+    "score": "8.57"
+  },
+  {
+    "rank": "100",
+    "title": "Wind Breaker",
+    "score": "8.57"
+  }
+]
