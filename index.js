@@ -1,53 +1,62 @@
-const cheerio = require('cheerio'); //Parsing HTML
+// Importing required modules
+const cheerio = require('cheerio'); // Parsing HTML
 const axios = require('axios');
-const j2c = require('json2csv').Parser; //Parse data to CSV format
-const { readFileSync, writeFileSync } = require('fs');
+const j2c = require('json2csv').Parser; // Parse data to CSV format
+const { writeFileSync } = require('fs');
 
+// URLs for top anime and manga lists
 const topAnime = "https://myanimelist.net/topanime.php";
 const topManga = "https://myanimelist.net/topmanga.php";
-// const baseUrl = "https://myanimelist.net/topanime.php";
-const data = [];
 
-const getMedia = async (url) => {
-    try{
-        const response = await axios.get(url);
-        const $ = cheerio.load(response.data);
-        // let scrapedItems = 0;
+// Function to scrape media data from the provided URL
+const getMedia = async (url, fileName1, fileName2, max = 100) => {
+    try {
+        let scrapedItems = 0;
+        const data = [];
 
-        $(".ranking-list").each((i, media) => {
-            rank = $(media).find(".rank .top-anime-rank-text").text();
-            title = $(media).find("h3 a").text();
-            score = $(media).find(".score .text").text();
+        // Loop through pages until the maximum number of items is reached
+        while (scrapedItems < max) {
+            const response = await axios.get(url);
+            const $ = cheerio.load(response.data);
 
-            data.push({rank, title, score});
-            // scrapedItems++;
+            // Extract media data from each page
+            $(".ranking-list").each((i, media) => {
+                const rank = $(media).find(".rank .top-anime-rank-text").text();
+                const title = $(media).find("h3 a").text();
+                const score = $(media).find(".score .text").text();
 
-            // if(scrapedItems >= 100){
-            //     return false;
-            // }
-        });
+                data.push({ rank, title, score });
+                scrapedItems++;
+            });
 
-        // if($(".next").length > 0 && scrapedItems < 100){
-        //     nextPage = topAnime + $(".next").attr("href");
-        //     await getAnime(nextPage);
-        // }else{
-        //     const parser = new j2c();
-        //     const csv = parser.parse(data);
-        //     fs.writeFileSync("./Top 100 anime.csv", csv);
-        // }
+            // Move to the next page
+            const nextPage = $(".next").attr("href");
+            if (!nextPage) break;
+            url = url + nextPage;
+        }
 
+        // Convert data to CSV format and save it to a file
         const parser = new j2c();
-        const csv = parser.parse(data);
-        writeFileSync("./Top 100 anime.csv", csv, (err) => {
-            if(err) throw err;
+        const csv = parser.parse(data.slice(0, max));
+        writeFileSync(fileName1, csv, (err) => {
+            if (err) throw err;
         });
-        // writeFileSync('Top100.json', JSON.stringify(data), (err) => {
-        //     if(err) throw err;
-        // }); 
-    }catch(err){
+
+        // Convert data to JSON format and save it to a file
+        writeFileSync(fileName2, JSON.stringify(data.slice(0, max)), (err) => {
+            if (err) throw err;
+        });
+    } catch (err) {
         console.log(err);
     }
 };
 
-getMedia(topAnime);
-// getMedia(topManga);
+// Scrape top 100 anime and manga data and save it to CSV and JSON files
+getMedia(topAnime, './Top100Anime.csv', './Top100Anime.json');
+getMedia(topManga, './Top100Manga.csv', './Top100Manga.json');
+//
+/*
+This code uses the `cheerio` library to parse HTML and the `axios` library to make HTTP requests. 
+It defines a function, `getMedia`, which scrapes media data from the provided URLs and saves it to CSV and JSON files. 
+The `getMedia` function handles pagination and stops once the maximum number of items is reached.
+*/
