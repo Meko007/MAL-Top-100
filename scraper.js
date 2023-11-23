@@ -21,7 +21,7 @@ const getMedia = async (url, fileName1, fileName2, max) => {
             const $ = cheerio.load(response.data);
 
             $(".ranking-list").each(function () {
-                const rank = $(this).find(".rank .top-anime-rank-text").text();
+                const rank = parseInt($(this).find(".rank .top-anime-rank-text").text());
                 const title = $(this).find("h3 a").text();
                 const score = $(this).find(".score .text").text();
 
