@@ -1,16 +1,9 @@
-const cheerio = require('cheerio'); // Parsing HTML
-const axios = require('axios'); // Handles HTTP requests
-const j2c = require('json2csv').Parser; // Parse data to CSV format
-const { writeFileSync } = require('fs');
+import cheerio from 'cheerio'; // Parsing HTML
+import axios from 'axios'; // Handles HTTP requests
+import { Parser } from '@json2csv/plainjs'; // Parse data to CSV format
+import { writeFileSync } from 'fs';
 
-/**
- * Scrapes top anime from MyAnimeList and saves the data in CSV and JSON formats.
- * @param {string} url - The URL of the MyAnimeList page to scrape.
- * @param {string} fileName1 - The name of the CSV file to save the data.
- * @param {string} fileName2 - The name of the JSON file to save the data.
- * @param {number} max - The maximum number of anime to scrape.
- */
-const getMedia = async (url, fileName1, fileName2, max) => {
+export const getMedia = async (url, fileName1, fileName2, max) => {
     try {
         let scrapedItems = 0;
         const data = [];
@@ -36,7 +29,7 @@ const getMedia = async (url, fileName1, fileName2, max) => {
         }
 
         // Convert data to CSV format
-        const parser = new j2c();
+        const parser = new Parser();
         const csv = parser.parse(data.slice(0, max));
         writeFileSync(fileName1, csv, (err) => {
             if (err) throw err;
@@ -50,5 +43,3 @@ const getMedia = async (url, fileName1, fileName2, max) => {
         console.log(err);
     }
 };
-
-module.exports = { getMedia };
