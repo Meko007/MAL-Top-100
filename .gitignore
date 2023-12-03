@@ -1,5 +1,4 @@
 /node_modules
+.env
 Top100Anime.csv
-Top100Anime.json
 Top100Manga.csv
-Top100Manga.json

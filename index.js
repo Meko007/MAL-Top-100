@@ -1,15 +1,17 @@
 import express from 'express';
 import { getMedia } from './scraper.js';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
-const PORT = 5000;
+const port = process.env.PORT ?? 3000;
 
-app.listen(PORT, () => {
-    console.log(`server is listening on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`server is listening on port ${port}`);
 });
 
 const topAnime = "https://myanimelist.net/topanime.php";
 const topManga = "https://myanimelist.net/topmanga.php";
 
-getMedia(topAnime, './Top100Anime.csv', './Top100Anime.json', 100);
-getMedia(topManga, './Top100Manga.csv', './Top100Manga.json', 100);
+getMedia(topAnime, './Top100Anime.csv', 100);
+getMedia(topManga, './Top100Manga.csv', 100);

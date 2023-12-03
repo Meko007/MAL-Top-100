@@ -1,9 +1,9 @@
 import cheerio from 'cheerio'; // Parsing HTML
 import axios from 'axios'; // Handles HTTP requests
 import { Parser } from '@json2csv/plainjs'; // Parse data to CSV format
-import { writeFileSync } from 'fs';
+import { writeFile } from 'fs/promises';
 
-export const getMedia = async (url, fileName1, fileName2, max) => {
+export const getMedia = async (url, fileName, max) => {
     try {
         let scrapedItems = 0;
         const data = [];
@@ -31,15 +31,10 @@ export const getMedia = async (url, fileName1, fileName2, max) => {
         // Convert data to CSV format
         const parser = new Parser();
         const csv = parser.parse(data.slice(0, max));
-        writeFileSync(fileName1, csv, (err) => {
-            if (err) throw err;
-        });
-
-        // Convert data to JSON format
-        writeFileSync(fileName2, JSON.stringify(data.slice(0, max), null, 2), (err) => {
+        await writeFile(fileName, csv, (err) => {
             if (err) throw err;
         });
     } catch (err) {
-        console.log(err);
+        console.log(err);   
     }
 };
