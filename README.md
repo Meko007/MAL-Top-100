@@ -27,6 +27,7 @@ Create a `.env` file in the project root directory and add the following environ
 
 ```
 PORT=XXXX
+USER_PROFILE=<your PC's user path e.g C:\Users\Nodemon>
 ```
 
 ## Usage
@@ -36,8 +37,15 @@ To run the scraper, simply run the following command:
 ```
 npm run dev
 ```
+Head over the browser and type this into the URL bar and type in:
 
-The scraper will start running and will save the data to the following CSV files:
+```
+http://localhost:XXXX/scrape?url=https://myanimelist.net/topmanga.php&fileName=<file name of your choice>.csv&max=<amount of titles you want to scrape e.g 100>
+```
+OR
 
-- `Top100Anime.csv`
-- `Top100Manga.csv`
+```
+http://localhost:XXX/scrape?url=https://myanimelist.net/topanime.php&fileName=<file name of your choice>.csv&max=<amount of titles you want to scrape e.g 100>
+```
+
+The scraper will start running and will save the data to a CSV file in your downloads folder.
