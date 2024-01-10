@@ -45,7 +45,12 @@ http://localhost:XXXX/scrape?url=https://myanimelist.net/topmanga.php&fileName=<
 OR
 
 ```
-http://localhost:XXX/scrape?url=https://myanimelist.net/topanime.php&fileName=<file name of your choice>.csv&max=<amount of titles you want to scrape e.g 100>
+http://localhost:XXXX/scrape?url=https://myanimelist.net/topanime.php&fileName=<file name of your choice>.csv&max=<amount of titles you want to scrape e.g 100>
+```
+Here's an example
+
+```
+http://localhost:0000/scrape?url=https://myanimelist.net/topanime.php&fileName=Top150Anime.csv&max=150
 ```
 
 The scraper will start running and will save the data to a CSV file in your downloads folder.
