@@ -12,7 +12,7 @@ const userProfile = process.env.USER_PROFILE as string;
 export const getMedia = async (url: string, fileName: string, max: number) => {
 	try {
 		let scrapedItems = 0;
-		const data: any[] = [];
+		const data: { rank: number, title: string, score: string }[] = [];
 
 		// Scrape data from each page
 		while (scrapedItems < max) {
